@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
+
 /**
  * main - Entry point
- * Returrn:1
+ * 
+ * Returrn: Always 0 (success)
  */
 
 int main(void)
