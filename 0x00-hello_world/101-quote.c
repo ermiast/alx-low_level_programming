@@ -1,14 +1,12 @@
-#include <unistd.h>
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Changes stderr without using printf or puts
- *
- * Return: Always 1
+ * main - Entry point
+ * Return:1
  */
-
 int main(void)
 {
-write(2, "and that piece of art is useful \" - Dora Korpar, 2015-10-19\n", 59);
+char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, ch, sizeof(ch));
 return (1);
 }
